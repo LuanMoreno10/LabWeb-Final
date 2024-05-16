@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="SignUp.css">
+    <script src="SignUp.js" async></script>
     <title>EuroCarMasters</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="EuroCarMasters.html"><i class="fas fa-duotone fa-car" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i></a>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="EuroCarMasters.html"><i class="fas fa-duotone fa-car" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i></a>
+            </div> 
+    </header>
+
+    <div class="logout-container">
+        <h2>Sign Up</h2>
+        <div class="input-container">
+            <i class="bx bx-user"></i><label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="username" required>
         </div>
+        <div class="input-container">
+            <i class="bx bx-user"></i><label for="fullname">Full name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="fullname" required>
+        </div>
+        <div class="input-container">
+            <i class="bx bxl-gmail"></i><label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email" required>
+        </div>
+        <div class="input-container">
+            <i class="bx bxs-phone"></i><label for="phone">Phone number</label>
+            <input type="number" name="number" id="number" placeholder="number" required>
+        </div>
+        <div class="input-container">
+            <i class="bx bx-home "></i><label for="adress">Adress</label>
+            <input type="text" name="adress" id="adress" placeholder="adress" required>
+        </div>
+        <div class="input-container">
+            <i class="bx bxs-lock-alt"><i class="bx bx-show"></i></i><label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </div>
+        <div class="input-container">
+            <i class="bx bx-user"></i><label for="admin">Admin</label>
+            <input type="text" name="admin" id="admin" placeholder="admin" required>
+        </div>
+
+        <button class="submit-btn" type="submit" onclick="return validarPassword()">Register</button>
+        <p>Already have an account?<a href="login.html">Sign in</a></p>
     </div>
 </body>
 </html>

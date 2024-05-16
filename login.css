@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -30,7 +30,6 @@ a {
 /* HEADER */
 header {
     position: relative;
-    padding: 0 2rem;
 }
 
 .navbar {
@@ -39,7 +38,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 20px;
 }
 
@@ -57,11 +56,97 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 380px;
-    padding: 20px 30px;
+    padding: 50px 30px;
     overflow: hidden;
     background: rgb(178, 179, 178);
     border-radius: 10px;
     z-index: 2;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+p a{
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.login-container .form-group1{
+    display: flex;
+    align-items: center;
+}
+
+.login-container .form-group2{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.password-toggle {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 56%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password i {
+    color: #888;
+}
+
+.toggle-password.active i {
+    color: #333; /* Cor do ícone quando a senha está visível */
+}
+
+
+.login-container .form-group#username{
+    align-items: center;
+}
+
+.login-container .form-group#password{
+    align-items: center;
+}
+
+.login-container .form-group i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input#username{
+    margin-left: 5px;
+}
+
+input#password{
+    margin-left: 10px;
+}
+
+.login-container button{
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover{
+    background-color: #3a666a;
 }
 
 .login-container p{
@@ -74,30 +159,9 @@ header {
 
 .login-container a{
     color: rgb(255, 255, 255);
-
 }
 
 .login-container a:hover{
+    color: #000;
     border-bottom: white;
-}
-
-h2{
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-p a{
-    text-decoration: underline;
-    padding-left: 5px;
-}
-
-.login-container .form-group{
-    display: inline-block;
-    text-align: center;
-}
-
-.login-container button{
-    border-radius: 5px;
 }
