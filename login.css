@@ -86,6 +86,7 @@ p a{
     margin-top: 10px;
 }
 
+/* Ver password */
 .password-toggle {
     position: relative;
 }
@@ -106,6 +107,7 @@ p a{
     color: #333; /* Cor do ícone quando a senha está visível */
 }
 
+/* Ver Password end */
 
 .login-container .form-group#username{
     align-items: center;
@@ -136,6 +138,7 @@ input#password{
     margin-left: 10px;
 }
 
+/* Botão Log in */
 .login-container button{
     width: 70px;
     padding: 5px;
@@ -148,6 +151,7 @@ input#password{
 .login-container button:hover{
     background-color: #3a666a;
 }
+/* Botão Log in end */
 
 .login-container p{
     color: #fff;

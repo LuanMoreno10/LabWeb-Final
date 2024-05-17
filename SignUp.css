@@ -83,20 +83,53 @@ header {
     border: none;
 }
 
-.submit-btn {
+/* Ver password */
+.password-toggle {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 65%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password i {
+    color: #888;
+}
+
+.toggle-password.active i {
+    color: #333; /* Cor do ícone quando a senha está visível */
+}
+/* Ver Password end */
+
+.separator{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+/* Botão Register */
+.submit-btn{
     width: 100%;
     padding: 10px;
-    margin-top: 20px;
-    border: none;
+    margin-top: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
     background-color: #3a666a;
 }
+
+/* Botão Register end */
 
 .logout-container p{
     color: white;
