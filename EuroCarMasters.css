@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 90vh;
     background-color: #000;
     background-image: url('https://images.unsplash.com/photo-1564890379370-2cf3df59dfb9?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D://imahttps://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=3328&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dges.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=3328&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
@@ -161,16 +161,23 @@ section#hero {
 }
 
 .botão {
-    font-size: 24px;
     color: white;
+}
+
+.botão a.action_btn{
+    margin-left: 10px;
 }
 
 .botão a {
     text-decoration: none;
-    font-size: 24px;
     border-bottom: none;
 }
 
-.botão a:hover {
-    color: white;
+.fa-solidfa-cart-shopping {
+    padding-right: 5px;
+}
+
+.botão .action_btn:hover {
+    background-color: #3a666a;
+    color: rgb(0, 0, 0);
 }

@@ -32,35 +32,36 @@ document.addEventListener('DOMContentLoaded', function () {
                 phone: document.getElementById('number').value,
                 adress: document.getElementById('adress').value,
                 password: document.getElementById('password').value,
-                admin: document.getElementById('admin').value
             };
 
-            const apiEndpoint = 'https://lwlc-proj-2024.onrender.com/api-docs/';
+            var userData = {
+                username: formData.username,
+                fullname: formData.fullname,
+                email: formData.email,
+                phone: formData.phone,
+                adress: formData.adress,
+                password: formData.password,
+                admin: true
+                }
+
 
             try {
-                const response = await fetch(apiEndpoint, {
-                    method: 'POST',
+                const response = await fetch('https://lwlc-proj-2024.onrender.com/users', {
+                    method: 'POST', // or 'GET', 'PUT', etc.
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(formData)
+                    body: JSON.stringify(userData) // convert your data to JSON string
                 });
-
+            
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-
-                const data = await response.json();
-
-                if (data.success) {
-                    alert('Registration successful!');
-                    window.location.href = 'login.html'; //Redireciona para a página login
-                } else {
-                    alert(data.message || 'Registration failed');
-                }
+            
+                const data = await response.json(); // or response.text(), etc.
+                console.log(Data);
             } catch (error) {
                 console.error('Error:', error);
-                alert('An error occurred during registration. Please try again.');
             }
         });
     }
